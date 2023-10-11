@@ -22,6 +22,7 @@ MOVE_SPEED = 200
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Game of the Goose")
 
+
 # Player class
 class Player:
     def __init__(self, name, color):
@@ -64,6 +65,7 @@ class Player:
             y += CELL_SIZE // 2
             pygame.draw.circle(screen, self.color, (x, y), 10)
 
+
 # Initialize the player
 player = Player("Player", PLAYER_COLOR)
 
@@ -105,6 +107,7 @@ image_rect = winner_image.get_rect()
 
 # Popup screen
 popup_screen = None
+
 
 # Main game loop
 def main():
@@ -175,6 +178,7 @@ def main():
                     y_offset += font.get_height()
 
                 pygame.display.flip()
+
 
 if __name__ == "__main__":
     main()
