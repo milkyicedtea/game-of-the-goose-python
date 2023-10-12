@@ -21,6 +21,7 @@ MAX_ROLL_HISTORY = 3
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Game of the Goose")
 
+
 # Player class
 class Player:
     def __init__(self, name, color):
@@ -269,6 +270,7 @@ def main():
         if special_popup:
             pygame.time.delay(2000)  # Display the pop-up for 2 seconds
             special_popup = None
+
 
 if __name__ == "__main__":
     main()
