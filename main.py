@@ -118,9 +118,9 @@ cell_phrases = {
     10: "Ogni città ha un messaggio che puo' essere implicito o esplicito",
     11: "Ogni città ha un messaggio che puo' essere implicito o esplicito",
     12: "Ogni città ha un messaggio che puo' essere implicito o esplicito",
-    13: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili (quelle che sogna) sono un sogno, poiché invivibili.",
-    14: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili (quelle che sogna) sono un sogno, poiché invivibili.",
-    15: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili (quelle che sogna) sono un sogno, poiché invivibili.",
+    13: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili sono un sogno, poiché invivibili.",
+    14: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili sono un sogno, poiché invivibili.",
+    15: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili sono un sogno, poiché invivibili.",
     16: "",
     17: "",
     18: "",
@@ -135,16 +135,16 @@ cell_phrases = {
     27: "",
     28: "",
     29: "",
-    30: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… \nRaggiungi le caselle da 40 a 44 per leggere il continuo!",
-    31: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… \nRaggiungi le caselle da 40 a 44 per leggere il continuo!",
-    32: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… \nRaggiungi le caselle da 40 a 44 per leggere il continuo!",
-    33: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… \nRaggiungi le caselle da 40 a 44 per leggere il continuo!",
-    34: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… \nRaggiungi le caselle da 40 a 44 per leggere il continuo!",
-    35: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… \nRaggiungi le caselle da 45 a 49 per sapere il continuo!",
-    36: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… \nRaggiungi le caselle da 45 a 49 per sapere il continuo!",
-    37: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… \nRaggiungi le caselle da 45 a 49 per sapere il continuo!",
-    38: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… \nRaggiungi le caselle da 45 a 49 per sapere il continuo!",
-    39: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… \nRaggiungi le caselle da 45 a 49 per sapere il continuo!",
+    30: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    31: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    32: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    33: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    34: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    35: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
+    36: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
+    37: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
+    38: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
+    39: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
     40: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
     41: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
     42: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
@@ -158,31 +158,158 @@ cell_phrases = {
     # Add more cell positions and phrases as needed
 }
 
+cell_images = {
+    1: "./resources/CALVINO/1/Italo_Calvino.png",
+    2: "./resources/CALVINO/1/Italo_Calvino.png",
+    3: "./resources/CALVINO/1/Italo_Calvino.png",
+    4: "./resources/CALVINO/1/Italo_Calvino.png",
+    5: "./resources/CALVINO/2/Calvino_crater_mercurio.jpg",
+    6: "./resources/CALVINO/1/Italo_Calvino.png",
+    7: "./resources/CALVINO/2/Calvino_crater_mercurio.jpg",
+    8: "./resources/CALVINO/1/Italo_Calvino.png",
+    9: "./resources/CALVINO/2/Calvino_crater_mercurio.jpg",
+    10: "./resources/CALVINO/3/anastasia-400-per-sito_7bxh.jpg",
+    11: "./resources/CALVINO/3/anastasia-400-per-sito_7bxh.jpg",
+    12: "./resources/CALVINO/3/anastasia-400-per-sito_7bxh.jpg",
+    13: "./resources/CALVINO/4/Him_sitDown.jpg",
+    14: "./resources/CALVINO/4/Him_sitDown.jpg",
+    15: "./resources/CALVINO/4/Him_sitDown.jpg",
+    16: "./resources/CALVINO/categorie_11_citta/1_diomira_Memoria.png",
+    17: "./resources/CALVINO/categorie_11_citta/1_diomira_Memoria.png",
+    18: "./resources/CALVINO/categorie_11_citta/1_diomira_Memoria.png",
+    19: "./resources/CALVINO/categorie_11_citta/2_despina_Desiderio.png",
+    20: "./resources/CALVINO/categorie_11_citta/2_despina_Desiderio.png",
+    21: "./resources/CALVINO/categorie_11_citta/2_despina_Desiderio.png",
+    22: "./resources/CALVINO/categorie_11_citta/3_tamara_Segni.png",
+    23: "./resources/CALVINO/categorie_11_citta/3_tamara_Segni.png",
+    24: "./resources/CALVINO/categorie_11_citta/3_tamara_Segni.png",
+    25: "./resources/CALVINO/categorie_11_citta/4_ottavia_Sottili.png",
+    26: "./resources/CALVINO/categorie_11_citta/4_ottavia_Sottili.png",
+    27: "./resources/CALVINO/categorie_11_citta/4_ottavia_Sottili.png",
+    28: "./resources/CALVINO/categorie_11_citta/5_ersilia_Scambi.png",
+    29: "./resources/CALVINO/categorie_11_citta/5_ersilia_Scambi.png",
+    30: "./resources/CALVINO/4/Him_Think.PNG",
+    31: "./resources/CALVINO/4/Him_Think.PNG",
+    32: "./resources/CALVINO/4/Him_Think.PNG",
+    33: "./resources/CALVINO/4/Him_Think.PNG",
+    34: "./resources/CALVINO/4/Him_Think.PNG",
+    35: "./resources/CALVINO/marco-polo.png",
+    36: "./resources/CALVINO/marco-polo.png",
+    37: "./resources/CALVINO/marco-polo.png",
+    38: "./resources/CALVINO/marco-polo.png",
+    39: "./resources/CALVINO/marco-polo.png",
+    40: "./resources/CALVINO/4/Him_Think.PNG",
+    41: "./resources/CALVINO/4/Him_Think.PNG",
+    42: "./resources/CALVINO/4/Him_Think.PNG",
+    43: "./resources/CALVINO/4/Him_Think.PNG",
+    44: "./resources/CALVINO/4/Him_Think.PNG",
+    45: "./resources/CALVINO/marco-polo.png",
+    46: "./resources/CALVINO/marco-polo.png",
+    47: "./resources/CALVINO/marco-polo.png",
+    48: "./resources/CALVINO/marco-polo.png",
+    49: "./resources/CALVINO/marco-polo.png",
+    50: "./resources/CALVINO/categorie_11_citta/6_bauci_Occhi.png",
+    51: "./resources/CALVINO/categorie_11_citta/6_bauci_Occhi.png",
+    52: "./resources/CALVINO/categorie_11_citta/7_aglaura_Nomi.png",
+    53: "./resources/CALVINO/categorie_11_citta/7_aglaura_Nomi.png",
+    54: "./resources/CALVINO/categorie_11_citta/8_eusapia_Morti.png",
+    55: "./resources/CALVINO/categorie_11_citta/8_eusapia_Morti.png",
+    56: "./resources/CALVINO/categorie_11_citta/9_eudossia_Cielo.png",
+    57: "./resources/CALVINO/categorie_11_citta/9_eudossia_Cielo.png",
+    58: "./resources/CALVINO/categorie_11_citta/10_procopia_Continue.png",
+    59: "./resources/CALVINO/categorie_11_citta/10_procopia_Continue.png",
+    60: "./resources/CALVINO/categorie_11_citta/11_oldindia_Nascoste.png",
+    61: "./resources/CALVINO/categorie_11_citta/11_oldindia_Nascoste.png",
+    62: "./resources/CALVINO/2/him_happy.jpg",
+}
 
-def show_special_popup(text):
-    # Store original game window size
+
+def show_special_popup(text, position, image_path=None):
+    print('show_special_popup')
+    # Store the original game window size
     original_size = screen.get_size()
+    if position != 63:
+        popup_width, popup_height = 800, 400
+        popup_screen = pygame.display.set_mode((popup_width, popup_height))
+        pygame.display.set_caption("Special Popup")
 
-    popup_size = (400, 200)
-    popup_screen = pygame.display.set_mode(popup_size)
-    pygame.display.set_caption("Special Popup")
+        popup_screen.fill(WHITE)
+        font = pygame.font.Font(None, 24)  # Adjust the font size
 
-    popup_screen.fill(WHITE)
-    font = pygame.font.Font(None, 36)
-    text_surface = font.render(text, True, (0, 0, 0))
-    text_rect = text_surface.get_rect(center=(popup_size[0] // 2, popup_size[1] // 2))
-    popup_screen.blit(text_surface, text_rect)
-    pygame.display.flip()
+        # Wrap the text to fit within the popup window width
+        max_line_width = popup_width - 40  # Adjust the padding
+        wrapped_text = []
+        words = text.split()
+        line = []
+        line_width = 0
 
-    waiting_for_close = True
-    while waiting_for_close:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:  # Press SPACE to close the popup
-                    waiting_for_close = False
+        for word in words:
+            word_surface = font.render(word, True, (0, 0, 0))
+            word_width, word_height = word_surface.get_size()
+
+            if line_width + word_width <= max_line_width:
+                line.append(word)
+                line_width += word_width
+            else:
+                wrapped_text.append(" ".join(line))
+                line = [word]
+                line_width = word_width
+
+        if line:
+            wrapped_text.append(" ".join(line))
+
+        text_rect = pygame.Rect(10, 10, max_line_width, popup_height - 40)  # Adjust the position and size
+        for line in wrapped_text:
+            text_surface = font.render(line, True, (0, 0, 0))
+            popup_screen.blit(text_surface, text_rect.topleft)
+            text_rect.top += word_height  # Adjust the line spacing
+
+        # Load and display an image if provided
+        print(position)
+        if position in cell_images:
+            image_path = cell_images[position]
+            try:
+                image = pygame.image.load(image_path)
+
+                # Calculate the maximum available width and height
+                max_width = max_line_width  # To fit the text width
+                max_height = popup_height - 40  # Adjust for padding
+
+                # Get the image dimensions
+                image_width, image_height = image.get_size()
+
+                # Calculate the scaling factor for width and height
+                width_factor = max_width / image_width
+                height_factor = max_height / image_height
+
+                # Choose the smallest scaling factor to maintain aspect ratio
+                scale_factor = min(width_factor, height_factor)
+
+                # Resize the image while maintaining aspect ratio
+                image = pygame.transform.scale(image, (int(image_width * scale_factor), int(image_height * scale_factor)))
+
+                # Calculate the position to center the image
+                image_x = (max_width - image.get_width()) // 2
+                image_y = (max_height - image.get_height()) // 2 + 40
+
+                popup_screen.blit(image, (10 + image_x, 10 + image_y))
+            except pygame.error as e:
+                print(f"Error loading image: {e}")
+
+        pygame.display.flip()
+
+        waiting_for_close = True
+        while waiting_for_close:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_SPACE:  # Press SPACE to close the popup
+                        waiting_for_close = False
+
+        # Restore the original game window size
+        pygame.display.set_mode(original_size)
 
 
 # Main game loop
@@ -207,16 +334,26 @@ def main():
                     print(f"{player.name} rolled a {roll_result}")
 
                     if player.position + roll_result >= BOARD_SIZE:
-                        player.position = BOARD_SIZE  # Set the player's position to the winning position
+                        player.position = BOARD_SIZE
                         winner_name = player.name
-                        show_special_popup(f"{winner_name} wins!")
-                    else:
-                        # Update target_position for progressive movement
-                        target_position = player.position + roll_result
+                        popup_size = (640, 384)
+                        popup_screen = pygame.display.set_mode(popup_size)
+                        pygame.display.set_caption("Winner")
 
-                        # Check if the player has landed on a special cell
+                        popup_screen.fill(WHITE)
+                        winning_image = pygame.image.load("./resources/calvino2.jpg")
+                        popup_screen.blit(winning_image, ((popup_size[0] - winning_image.get_width()) // 2,
+                                                          (popup_size[1] - winning_image.get_height()) // 2))
+                        font = pygame.font.Font(None, 36)
+                        text = font.render(f"{winner_name} wins!", True, player.color)
+                        text_rect = text.get_rect(center = (popup_size[0] // 2, popup_size[1] - 30))
+                        popup_screen.blit(text, text_rect)
+                        pygame.display.flip()
+                    else:
+                        target_position = player.position + roll_result
                         if player.position in cell_phrases:
-                            special_popup = cell_phrases[player.position]
+                            special_popup = cell_phrases[player.position] or cell_images[player.position]
+                            print(special_popup)
 
         if player.position < len(board_positions):
             screen.fill(WHITE)
@@ -261,7 +398,9 @@ def main():
 
             # Display special pop-up
             if special_popup:
-                show_special_popup(special_popup)
+                print(player.position)
+                print('calling special popup')
+                show_special_popup(special_popup, player.position, cell_images)
                 special_popup = None
 
             pygame.display.flip()
