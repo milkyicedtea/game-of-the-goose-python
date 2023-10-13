@@ -7,6 +7,11 @@ import time
 # Initialize Pygame
 pygame.init()
 
+# Initialize Pygame mixer
+pygame.mixer.init()
+background_music = pygame.mixer.Sound("./resources/The Doors - Riders on the Storm (Official Audio).mp3")
+background_music.play(-1)   # Loop indefinitely
+
 # Constants
 WIDTH, HEIGHT = 800, 600
 WHITE = (255, 255, 255)
@@ -155,7 +160,19 @@ cell_phrases = {
     47: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
     48: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
     49: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
-    # Add more cell positions and phrases as needed
+    50: "",
+    51: "",
+    52: "",
+    53: "",
+    54: "",
+    55: "",
+    56: "",
+    57: "",
+    58: "",
+    59: "",
+    60: "",
+    61: "",
+    62: "",
 }
 
 cell_images = {
@@ -218,152 +235,78 @@ cell_images = {
     57: "./resources/CALVINO/categorie_11_citta/9_eudossia_Cielo.png",
     58: "./resources/CALVINO/categorie_11_citta/10_procopia_Continue.png",
     59: "./resources/CALVINO/categorie_11_citta/10_procopia_Continue.png",
-    60: "./resources/CALVINO/categorie_11_citta/11_oldindia_Nascoste.png",
-    61: "./resources/CALVINO/categorie_11_citta/11_oldindia_Nascoste.png",
+    60: "./resources/CALVINO/categorie_11_citta/11_olinda_Nascoste.png",
+    61: "./resources/CALVINO/categorie_11_citta/11_olinda_Nascoste.png",
     62: "./resources/CALVINO/2/him_happy.jpg",
 }
 
-
-def show_special_popup(text, position, image_path=None):
-    print('show_special_popup')
-    # Store the original game window size
-    original_size = screen.get_size()
-    if position != 63:
-        popup_width, popup_height = 800, 400
-        popup_screen = pygame.display.set_mode((popup_width, popup_height))
-        pygame.display.set_caption("Special Popup")
-
-        popup_screen.fill(WHITE)
-        font = pygame.font.Font(None, 24)  # Adjust the font size
-
-        # Wrap the text to fit within the popup window width
-        max_line_width = popup_width - 40  # Adjust the padding
-        wrapped_text = []
-        words = text.split()
-        line = []
-        line_width = 0
-
-        for word in words:
-            word_surface = font.render(word, True, (0, 0, 0))
-            word_width, word_height = word_surface.get_size()
-
-            if line_width + word_width <= max_line_width:
-                line.append(word)
-                line_width += word_width
-            else:
-                wrapped_text.append(" ".join(line))
-                line = [word]
-                line_width = word_width
-
-        if line:
-            wrapped_text.append(" ".join(line))
-
-        text_rect = pygame.Rect(10, 10, max_line_width, popup_height - 40)  # Adjust the position and size
-        for line in wrapped_text:
-            text_surface = font.render(line, True, (0, 0, 0))
-            popup_screen.blit(text_surface, text_rect.topleft)
-            text_rect.top += word_height  # Adjust the line spacing
-
-        # Load and display an image if provided
-        print(position)
-        if position in cell_images:
-            image_path = cell_images[position]
-            try:
-                image = pygame.image.load(image_path)
-
-                # Calculate the maximum available width and height
-                max_width = max_line_width  # To fit the text width
-                max_height = popup_height - 40  # Adjust for padding
-
-                # Get the image dimensions
-                image_width, image_height = image.get_size()
-
-                # Calculate the scaling factor for width and height
-                width_factor = max_width / image_width
-                height_factor = max_height / image_height
-
-                # Choose the smallest scaling factor to maintain aspect ratio
-                scale_factor = min(width_factor, height_factor)
-
-                # Resize the image while maintaining aspect ratio
-                image = pygame.transform.scale(image, (int(image_width * scale_factor), int(image_height * scale_factor)))
-
-                # Calculate the position to center the image
-                image_x = (max_width - image.get_width()) // 2
-                image_y = (max_height - image.get_height()) // 2 + 40
-
-                popup_screen.blit(image, (10 + image_x, 10 + image_y))
-            except pygame.error as e:
-                print(f"Error loading image: {e}")
-
-        pygame.display.flip()
-
-        waiting_for_close = True
-        while waiting_for_close:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_SPACE:  # Press SPACE to close the popup
-                        waiting_for_close = False
-
-        # Restore the original game window size
-        pygame.display.set_mode(original_size)
+background_image = pygame.image.load("./resources/CALVINO/background.jpg")
 
 
-# Main game loop
-def main():
-    global popup_screen
+def main_game_loop(player):
+    # Define a function to draw the background
+    def draw_background():
+        screen.fill(WHITE)
+        # Scale the background image to fit the screen dimensions
+        scaled_background = pygame.transform.scale(background_image, (WIDTH, HEIGHT))
+        screen.blit(scaled_background, (0, 0))  # Draw the scaled background image
+
     special_popup = None  # Initialize special popup
-    player = Player("Player 1", PLAYER_COLORS[0])  # Create a single player for a one-player game
-
     target_position = player.position  # Initialize target_position to current position
     move_speed = 5  # Adjust the speed of movement
+
+    popup_active = False
 
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
+            if not popup_active:
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_SPACE and not popup_active:
+                        print(f'special popup {special_popup}')
+                        if not popup_active:
+                            roll_result = random.randint(1, 5)
 
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
-                    roll_result = random.randint(1, 6)
+                            print(f"{player.name} rolled a {roll_result}")
 
-                    print(f"{player.name} rolled a {roll_result}")
+                            if player.position + roll_result >= BOARD_SIZE:
+                                player.position = BOARD_SIZE
+                                winner_name = player.name
+                                popup_size = (640, 384)
+                                popup_screen = pygame.display.set_mode(popup_size)
+                                pygame.display.set_caption("Winner")
 
-                    if player.position + roll_result >= BOARD_SIZE:
-                        player.position = BOARD_SIZE
-                        winner_name = player.name
-                        popup_size = (640, 384)
-                        popup_screen = pygame.display.set_mode(popup_size)
-                        pygame.display.set_caption("Winner")
+                                popup_screen.fill(WHITE)
+                                winning_image = pygame.image.load("./resources/calvino2.jpg")
+                                popup_screen.blit(winning_image, ((popup_size[0] - winning_image.get_width()) // 2,
+                                                                (popup_size[1] - winning_image.get_height()) // 2))
+                                font = pygame.font.Font(None, 36)
+                                text = font.render(f"{winner_name} wins!", True, player.color)
+                                text_rect = text.get_rect(center = (popup_size[0] // 2, popup_size[1] - 30))
+                                popup_screen.blit(text, text_rect)
+                                pygame.display.flip()
+                            else:
+                                target_position = player.position + roll_result
+                                if player.position in cell_phrases and not popup_active:
+                                    special_popup = cell_phrases[player.position] or cell_images[player.position]
+                                    popup_active = True
+                                    print(special_popup)
 
-                        popup_screen.fill(WHITE)
-                        winning_image = pygame.image.load("./resources/calvino2.jpg")
-                        popup_screen.blit(winning_image, ((popup_size[0] - winning_image.get_width()) // 2,
-                                                          (popup_size[1] - winning_image.get_height()) // 2))
-                        font = pygame.font.Font(None, 36)
-                        text = font.render(f"{winner_name} wins!", True, player.color)
-                        text_rect = text.get_rect(center = (popup_size[0] // 2, popup_size[1] - 30))
-                        popup_screen.blit(text, text_rect)
-                        pygame.display.flip()
-                    else:
-                        target_position = player.position + roll_result
-                        if player.position in cell_phrases:
-                            special_popup = cell_phrases[player.position] or cell_images[player.position]
-                            print(special_popup)
+        # Draw background
+        draw_background()
 
         if player.position < len(board_positions):
-            screen.fill(WHITE)
+            # screen.fill(WHITE)
 
             # Draw cells and cell numbers
             for i, (x, y) in enumerate(board_positions):
-                pygame.draw.rect(screen, (0, 0, 0), (x, y, CELL_SIZE, CELL_SIZE), 1)
+                pygame.draw.rect(screen, WHITE, (x, y, CELL_SIZE, CELL_SIZE))  # Fill cell with white color
+                pygame.draw.rect(screen, (0, 0, 0), (x, y, CELL_SIZE, CELL_SIZE), 1)  # Add a black border
                 font = pygame.font.Font(None, 24)
                 text = font.render(str(i + 1), True, (0, 0, 0))
-                text_rect = text.get_rect(center=(x + CELL_SIZE // 2, y + CELL_SIZE // 2))
+                text_rect = text.get_rect(center = (x + CELL_SIZE // 2, y + CELL_SIZE // 2))
                 screen.blit(text, text_rect)
 
             # Implement progressive movement
@@ -402,14 +345,100 @@ def main():
                 print('calling special popup')
                 show_special_popup(special_popup, player.position, cell_images)
                 special_popup = None
+                popup_active = False
 
             pygame.display.flip()
 
-        # Remove the special pop-up after a delay
+    # Remove the special pop-up after a delay
         if special_popup:
             pygame.time.delay(2000)  # Display the pop-up for 2 seconds
             special_popup = None
 
+def show_special_popup(text, position, image_path=None):
+    print('show_special_popup')
+    # Store the original game window size
+    original_size = screen.get_size()
+    if position != 63:
+        popup_width, popup_height = 800, 400
+        popup_screen = pygame.display.set_mode((popup_width, popup_height))
+        pygame.display.set_caption("Special Popup")
+
+        try:
+            popup_screen.fill(WHITE)
+            font = pygame.font.Font(None, 24)  # Adjust the font size
+
+            # Wrap the text to fit within the popup window width
+            max_line_width = popup_width - 40  # Adjust the padding
+            wrapped_text = []
+            words = text.split()
+            line = []
+            line_width = 0
+
+            for word in words:
+                word_surface = font.render(word, True, (0, 0, 0))
+                word_width, word_height = word_surface.get_size()
+
+                if line_width + word_width <= max_line_width:
+                    line.append(word)
+                    line_width += word_width
+                else:
+                    wrapped_text.append(" ".join(line))
+                    line = [word]
+                    line_width = word_width
+
+            if line:
+                wrapped_text.append(" ".join(line))
+
+            text_rect = pygame.Rect(2, 10, max_line_width - 10, popup_height - 40)  # Adjust the position and size
+            for line in wrapped_text:
+                text_surface = font.render(line, True, (0, 0, 0))
+                popup_screen.blit(text_surface, text_rect.topleft)
+                text_rect.top += word_height  # Adjust the line spacing
+
+            # Load and display an image if provided
+            print(position)
+            if position in cell_images:
+                image_path = cell_images[position]
+                try:
+                    print(f'image path={image_path}')
+                    image = pygame.image.load(image_path)
+                    max_image_height = popup_height - 80
+                    max_image_width = popup_width - 40
+                    image_width, image_height = image.get_size()
+
+                    if image_width > max_image_width or image_height > max_image_height:
+                        # Scale the image to fit within the popup window
+                        scaling_factor = min(max_image_width / image_width, max_image_height / image_height)
+                        image = pygame.transform.scale(image, (int(image_width * scaling_factor),
+                                                             int(image_height * scaling_factor)))
+
+                    # Position the image below the text
+                    image_x = (popup_width - image.get_width()) // 2
+                    image_y = text_rect.bottom - 325
+
+                    popup_screen.blit(image, (image_x, image_y))
+                except pygame.error as e:
+                    print(f"Error loading image: {e}")
+
+            pygame.display.flip()
+
+            waiting_for_close = True
+            while waiting_for_close:
+                for event in pygame.event.get():
+                    if event.type == pygame.QUIT:
+                        pygame.quit()
+                        sys.exit()
+                    if event.type == pygame.KEYDOWN:
+                        if event.key == pygame.K_SPACE:  # Press SPACE to close the popup
+                            waiting_for_close = False
+
+            # Restore the original game window size
+            pygame.display.set_mode(original_size)
+
+        except Exception as e:
+            print(f"An error occurred in show_special_popup: {e}")
+
 
 if __name__ == "__main__":
-    main()
+    player = Player("Player 1", PLAYER_COLORS[0])  # Create a single player for a one-player game
+    main_game_loop(player)
