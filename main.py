@@ -1,3 +1,134 @@
+# Define a dictionary to map cell positions to phrases
+cell_images = {
+    1: "./resources/CALVINO/1/Italo_Calvino.png",
+    2: "./resources/CALVINO/1/Italo_Calvino.png",
+    3: "./resources/CALVINO/1/Italo_Calvino.png",
+    4: "./resources/CALVINO/1/Italo_Calvino.png",
+    5: "./resources/CALVINO/2/Calvino_crater_mercurio.jpg",
+    6: "./resources/CALVINO/1/Italo_Calvino.png",
+    7: "./resources/CALVINO/2/Calvino_crater_mercurio.jpg",
+    8: "./resources/CALVINO/1/Italo_Calvino.png",
+    9: "./resources/CALVINO/2/Calvino_crater_mercurio.jpg",
+    10: "./resources/CALVINO/3/anastasia-400-per-sito_7bxh.jpg",
+    11: "./resources/CALVINO/3/anastasia-400-per-sito_7bxh.jpg",
+    12: "./resources/CALVINO/3/anastasia-400-per-sito_7bxh.jpg",
+    13: "./resources/CALVINO/4/Him_sitDown.jpg",
+    14: "./resources/CALVINO/4/Him_sitDown.jpg",
+    15: "./resources/CALVINO/4/Him_sitDown.jpg",
+    16: "./resources/CALVINO/categorie_11_citta/1_diomira_Memoria.png",
+    17: "./resources/CALVINO/categorie_11_citta/1_diomira_Memoria.png",
+    18: "./resources/CALVINO/categorie_11_citta/1_diomira_Memoria.png",
+    19: "./resources/CALVINO/categorie_11_citta/2_despina_Desiderio.png",
+    20: "./resources/CALVINO/categorie_11_citta/2_despina_Desiderio.png",
+    21: "./resources/CALVINO/categorie_11_citta/2_despina_Desiderio.png",
+    22: "./resources/CALVINO/categorie_11_citta/3_tamara_Segni.png",
+    23: "./resources/CALVINO/categorie_11_citta/3_tamara_Segni.png",
+    24: "./resources/CALVINO/categorie_11_citta/3_tamara_Segni.png",
+    25: "./resources/CALVINO/categorie_11_citta/4_ottavia_Sottili.png",
+    26: "./resources/CALVINO/categorie_11_citta/4_ottavia_Sottili.png",
+    27: "./resources/CALVINO/categorie_11_citta/4_ottavia_Sottili.png",
+    28: "./resources/CALVINO/categorie_11_citta/5_ersilia_Scambi.png",
+    29: "./resources/CALVINO/categorie_11_citta/5_ersilia_Scambi.png",
+    30: "./resources/CALVINO/4/Him_Think.PNG",
+    31: "./resources/CALVINO/4/Him_Think.PNG",
+    32: "./resources/CALVINO/4/Him_Think.PNG",
+    33: "./resources/CALVINO/4/Him_Think.PNG",
+    34: "./resources/CALVINO/4/Him_Think.PNG",
+    35: "./resources/CALVINO/marco-polo.png",
+    36: "./resources/CALVINO/marco-polo.png",
+    37: "./resources/CALVINO/marco-polo.png",
+    38: "./resources/CALVINO/marco-polo.png",
+    39: "./resources/CALVINO/marco-polo.png",
+    40: "./resources/CALVINO/4/Him_Think.PNG",
+    41: "./resources/CALVINO/4/Him_Think.PNG",
+    42: "./resources/CALVINO/4/Him_Think.PNG",
+    43: "./resources/CALVINO/4/Him_Think.PNG",
+    44: "./resources/CALVINO/4/Him_Think.PNG",
+    45: "./resources/CALVINO/marco-polo.png",
+    46: "./resources/CALVINO/marco-polo.png",
+    47: "./resources/CALVINO/marco-polo.png",
+    48: "./resources/CALVINO/marco-polo.png",
+    49: "./resources/CALVINO/marco-polo.png",
+    50: "./resources/CALVINO/categorie_11_citta/6_bauci_Occhi.png",
+    51: "./resources/CALVINO/categorie_11_citta/6_bauci_Occhi.png",
+    52: "./resources/CALVINO/categorie_11_citta/7_aglaura_Nomi.png",
+    53: "./resources/CALVINO/categorie_11_citta/7_aglaura_Nomi.png",
+    54: "./resources/CALVINO/categorie_11_citta/8_eusapia_Morti.png",
+    55: "./resources/CALVINO/categorie_11_citta/8_eusapia_Morti.png",
+    56: "./resources/CALVINO/categorie_11_citta/9_eudossia_Cielo.png",
+    57: "./resources/CALVINO/categorie_11_citta/9_eudossia_Cielo.png",
+    58: "./resources/CALVINO/categorie_11_citta/10_procopia_Continue.png",
+    59: "./resources/CALVINO/categorie_11_citta/10_procopia_Continue.png",
+    60: "./resources/CALVINO/categorie_11_citta/11_olinda_Nascoste.png",
+    61: "./resources/CALVINO/categorie_11_citta/11_olinda_Nascoste.png",
+    62: "./resources/CALVINO/2/him_happy.jpg",
+}
+
+cell_phrases = {
+    1: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
+    2: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
+    3: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
+    4: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
+    5: "La sua comicità di fornire il modello Universo in poche pagine nella sua espressione",
+    6: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
+    7: "La sua comicità di fornire il modello universo in poche pagine nella sua espressione",
+    8: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
+    9: "La sua comicità di fornire il modello universo in poche pagine nella sua espressione",
+    10: "Ogni città ha un messaggio che puo' essere implicito o esplicito",
+    11: "Ogni città ha un messaggio che puo' essere implicito o esplicito",
+    12: "Ogni città ha un messaggio che puo' essere implicito o esplicito",
+    13: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili sono un sogno, poiché invivibili.",
+    14: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili sono un sogno, poiché invivibili.",
+    15: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili sono un sogno, poiché invivibili.",
+    16: "Diomira Memoria",
+    17: "Diomira Memoria",
+    18: "Diomira Memoria",
+    19: "Despina Desideri",
+    20: "Despina Desideri",
+    21: "Despina Desideri",
+    22: "Tamara Segni",
+    23: "Tamara Segni",
+    24: "Tamara Segni",
+    25: "Ottavia Sottili",
+    26: "Ottavia Sottili",
+    27: "Ottavia Sottili",
+    28: "Ersilia Scambi",
+    29: "Ersilia Scambi",
+    30: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    31: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    32: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    33: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    34: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
+    35: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
+    36: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
+    37: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
+    38: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
+    39: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
+    40: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
+    41: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
+    42: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
+    43: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
+    44: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
+    45: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
+    46: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
+    47: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
+    48: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
+    49: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
+    50: "Bauci Occhi",
+    51: "Bauci Occhi",
+    52: "Aglaura Nomi",
+    53: "Aglaura Nomi",
+    54: "Eusapia Morti",
+    55: "Eusapia Morti",
+    56: "Eudossia Cielo",
+    57: "Eudossia Cielo",
+    58: "Procopia Continue",
+    59: "Procopia Continue",
+    60: "Olinda Nascoste",
+    61: "Olinda Nascoste",
+    62: "",
+}
+
 import pygame
 import random
 import sys
@@ -109,137 +240,6 @@ image_rect = winner_image.get_rect()
 # Popup screen
 popup_screen = None
 
-# Define a dictionary to map cell positions to phrases
-cell_phrases = {
-    1: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
-    2: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
-    3: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
-    4: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
-    5: "La sua comicità di fornire il modello Universo in poche pagine nella sua espressione",
-    6: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
-    7: "La sua comicità di fornire il modello universo in poche pagine nella sua espressione",
-    8: "Le città sono divise in categorie, sono 55. Scopri di quali città stiamo parlando continuando a giocare!",
-    9: "La sua comicità di fornire il modello universo in poche pagine nella sua espressione",
-    10: "Ogni città ha un messaggio che puo' essere implicito o esplicito",
-    11: "Ogni città ha un messaggio che puo' essere implicito o esplicito",
-    12: "Ogni città ha un messaggio che puo' essere implicito o esplicito",
-    13: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili sono un sogno, poiché invivibili.",
-    14: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili sono un sogno, poiché invivibili.",
-    15: "Diceva che dal momento che è sempre più difficile vivere come in città forse ci si sta avvicinando a un momento di crisi di vita urbana. E le città Invisibili sono un sogno, poiché invivibili.",
-    16: "",
-    17: "",
-    18: "",
-    19: "",
-    20: "",
-    21: "",
-    22: "",
-    23: "",
-    24: "",
-    25: "",
-    26: "",
-    27: "",
-    28: "",
-    29: "",
-    30: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
-    31: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
-    32: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
-    33: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
-    34: "Riflette sulle ragioni segrete che guidano l’ uomo verso le città, esplorando le radici delle città antiche e nella modernità. Queste città… Raggiungi le caselle da 40 a 44 per leggere il continuo!",
-    35: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
-    36: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
-    37: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
-    38: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
-    39: "Nel racconto 'Le città invisibili' di Italo Calvino, la struttura bipolare emerge attraverso le descrizioni delle città. Marco Polo, nel suo dialogo con Kublai Khan, rivela città che sono visibili e invisibili, creando un'atmosfera di… Raggiungi le caselle da 45 a 49 per sapere il continuo!",
-    40: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
-    41: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
-    42: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
-    43: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
-    44: "Queste città mantengono i motivi da cui sono originate, mantenendo intatto il loro fascino misterioso e atermporale.",
-    45: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
-    46: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
-    47: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
-    48: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
-    49: "…un'atmosfera di dualità costante. Questa tecnica narrativa mette in evidenza la complessità delle percezioni umane e si riflette nelle diverse città immaginarie descritte nel libro.",
-    50: "",
-    51: "",
-    52: "",
-    53: "",
-    54: "",
-    55: "",
-    56: "",
-    57: "",
-    58: "",
-    59: "",
-    60: "",
-    61: "",
-    62: "",
-}
-
-cell_images = {
-    1: "./resources/CALVINO/1/Italo_Calvino.png",
-    2: "./resources/CALVINO/1/Italo_Calvino.png",
-    3: "./resources/CALVINO/1/Italo_Calvino.png",
-    4: "./resources/CALVINO/1/Italo_Calvino.png",
-    5: "./resources/CALVINO/2/Calvino_crater_mercurio.jpg",
-    6: "./resources/CALVINO/1/Italo_Calvino.png",
-    7: "./resources/CALVINO/2/Calvino_crater_mercurio.jpg",
-    8: "./resources/CALVINO/1/Italo_Calvino.png",
-    9: "./resources/CALVINO/2/Calvino_crater_mercurio.jpg",
-    10: "./resources/CALVINO/3/anastasia-400-per-sito_7bxh.jpg",
-    11: "./resources/CALVINO/3/anastasia-400-per-sito_7bxh.jpg",
-    12: "./resources/CALVINO/3/anastasia-400-per-sito_7bxh.jpg",
-    13: "./resources/CALVINO/4/Him_sitDown.jpg",
-    14: "./resources/CALVINO/4/Him_sitDown.jpg",
-    15: "./resources/CALVINO/4/Him_sitDown.jpg",
-    16: "./resources/CALVINO/categorie_11_citta/1_diomira_Memoria.png",
-    17: "./resources/CALVINO/categorie_11_citta/1_diomira_Memoria.png",
-    18: "./resources/CALVINO/categorie_11_citta/1_diomira_Memoria.png",
-    19: "./resources/CALVINO/categorie_11_citta/2_despina_Desiderio.png",
-    20: "./resources/CALVINO/categorie_11_citta/2_despina_Desiderio.png",
-    21: "./resources/CALVINO/categorie_11_citta/2_despina_Desiderio.png",
-    22: "./resources/CALVINO/categorie_11_citta/3_tamara_Segni.png",
-    23: "./resources/CALVINO/categorie_11_citta/3_tamara_Segni.png",
-    24: "./resources/CALVINO/categorie_11_citta/3_tamara_Segni.png",
-    25: "./resources/CALVINO/categorie_11_citta/4_ottavia_Sottili.png",
-    26: "./resources/CALVINO/categorie_11_citta/4_ottavia_Sottili.png",
-    27: "./resources/CALVINO/categorie_11_citta/4_ottavia_Sottili.png",
-    28: "./resources/CALVINO/categorie_11_citta/5_ersilia_Scambi.png",
-    29: "./resources/CALVINO/categorie_11_citta/5_ersilia_Scambi.png",
-    30: "./resources/CALVINO/4/Him_Think.PNG",
-    31: "./resources/CALVINO/4/Him_Think.PNG",
-    32: "./resources/CALVINO/4/Him_Think.PNG",
-    33: "./resources/CALVINO/4/Him_Think.PNG",
-    34: "./resources/CALVINO/4/Him_Think.PNG",
-    35: "./resources/CALVINO/marco-polo.png",
-    36: "./resources/CALVINO/marco-polo.png",
-    37: "./resources/CALVINO/marco-polo.png",
-    38: "./resources/CALVINO/marco-polo.png",
-    39: "./resources/CALVINO/marco-polo.png",
-    40: "./resources/CALVINO/4/Him_Think.PNG",
-    41: "./resources/CALVINO/4/Him_Think.PNG",
-    42: "./resources/CALVINO/4/Him_Think.PNG",
-    43: "./resources/CALVINO/4/Him_Think.PNG",
-    44: "./resources/CALVINO/4/Him_Think.PNG",
-    45: "./resources/CALVINO/marco-polo.png",
-    46: "./resources/CALVINO/marco-polo.png",
-    47: "./resources/CALVINO/marco-polo.png",
-    48: "./resources/CALVINO/marco-polo.png",
-    49: "./resources/CALVINO/marco-polo.png",
-    50: "./resources/CALVINO/categorie_11_citta/6_bauci_Occhi.png",
-    51: "./resources/CALVINO/categorie_11_citta/6_bauci_Occhi.png",
-    52: "./resources/CALVINO/categorie_11_citta/7_aglaura_Nomi.png",
-    53: "./resources/CALVINO/categorie_11_citta/7_aglaura_Nomi.png",
-    54: "./resources/CALVINO/categorie_11_citta/8_eusapia_Morti.png",
-    55: "./resources/CALVINO/categorie_11_citta/8_eusapia_Morti.png",
-    56: "./resources/CALVINO/categorie_11_citta/9_eudossia_Cielo.png",
-    57: "./resources/CALVINO/categorie_11_citta/9_eudossia_Cielo.png",
-    58: "./resources/CALVINO/categorie_11_citta/10_procopia_Continue.png",
-    59: "./resources/CALVINO/categorie_11_citta/10_procopia_Continue.png",
-    60: "./resources/CALVINO/categorie_11_citta/11_olinda_Nascoste.png",
-    61: "./resources/CALVINO/categorie_11_citta/11_olinda_Nascoste.png",
-    62: "./resources/CALVINO/2/him_happy.jpg",
-}
-
 background_image = pygame.image.load("./resources/CALVINO/background.jpg")
 
 
@@ -252,6 +252,7 @@ def main_game_loop(player):
         screen.blit(scaled_background, (0, 0))  # Draw the scaled background image
 
     special_popup = None  # Initialize special popup
+    popup_active = False
     target_position = player.position  # Initialize target_position to current position
     move_speed = 5  # Adjust the speed of movement
 
@@ -262,37 +263,37 @@ def main_game_loop(player):
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
-            if not popup_active:
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_SPACE and not popup_active:
-                        print(f'special popup {special_popup}')
-                        if not popup_active:
-                            roll_result = random.randint(1, 5)
 
-                            print(f"{player.name} rolled a {roll_result}")
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    if not popup_active:
+                        roll_result = random.randint(1, 5)
 
-                            if player.position + roll_result >= BOARD_SIZE:
-                                player.position = BOARD_SIZE
-                                winner_name = player.name
-                                popup_size = (640, 384)
-                                popup_screen = pygame.display.set_mode(popup_size)
-                                pygame.display.set_caption("Winner")
+                        print(f"{player.name} rolled a {roll_result}")
 
-                                popup_screen.fill(WHITE)
-                                winning_image = pygame.image.load("./resources/calvino2.jpg")
-                                popup_screen.blit(winning_image, ((popup_size[0] - winning_image.get_width()) // 2,
-                                                                (popup_size[1] - winning_image.get_height()) // 2))
-                                font = pygame.font.Font(None, 36)
-                                text = font.render(f"{winner_name} wins!", True, player.color)
-                                text_rect = text.get_rect(center = (popup_size[0] // 2, popup_size[1] - 30))
-                                popup_screen.blit(text, text_rect)
-                                pygame.display.flip()
-                            else:
-                                target_position = player.position + roll_result
-                                if player.position in cell_phrases and not popup_active:
-                                    special_popup = cell_phrases[player.position] or cell_images[player.position]
-                                    popup_active = True
-                                    print(special_popup)
+                        if player.position + roll_result >= BOARD_SIZE:
+                            player.position = BOARD_SIZE
+                            winner_name = player.name
+                            popup_active = True
+                            popup_size = (640, 384)
+                            popup_screen = pygame.display.set_mode(popup_size)
+                            pygame.display.set_caption("Winner")
+
+                            popup_screen.fill(WHITE)
+                            winning_image = pygame.image.load("./resources/calvino2.jpg")
+                            popup_screen.blit(winning_image, ((popup_size[0] - winning_image.get_width()) // 2,
+                                                            (popup_size[1] - winning_image.get_height()) // 2))
+                            font = pygame.font.Font(None, 36)
+                            text = font.render(f"{winner_name} wins!", True, player.color)
+                            text_rect = text.get_rect(center = (popup_size[0] // 2, popup_size[1] - 30))
+                            popup_screen.blit(text, text_rect)
+                            pygame.display.flip()
+                        else:
+                            target_position = player.position + roll_result
+                            if player.position in cell_phrases and not popup_active:
+                                special_popup = cell_phrases[player.position] or cell_images[player.position]
+                                popup_active = True
+                                print(special_popup)
 
         # Draw background
         draw_background()
@@ -422,15 +423,16 @@ def show_special_popup(text, position, image_path=None):
 
             pygame.display.flip()
 
-            waiting_for_close = True
-            while waiting_for_close:
+            popup_active = True
+
+            while popup_active:
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
                         pygame.quit()
                         sys.exit()
                     if event.type == pygame.KEYDOWN:
                         if event.key == pygame.K_SPACE:  # Press SPACE to close the popup
-                            waiting_for_close = False
+                            popup_active = False
 
             # Restore the original game window size
             pygame.display.set_mode(original_size)
