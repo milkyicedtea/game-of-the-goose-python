@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.spec
 
 # Environments
 .env
@@ -7,6 +8,8 @@ pyvenv.cfg
 Scripts
 Lib
 Include
+
+build/
 
 # PyCharm
 #  JetBrains specific template is maintainted in a separate JetBrains.gitignore that can
